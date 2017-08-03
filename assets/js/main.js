@@ -9,6 +9,7 @@ $(document).ready(function(){
 			console.log(latitud,longitud);
 		}
 	}
+geo();
 
 $.ajax({
 	url: 'https://api.darksky.net/forecast/c6bf15744245dfc8d810364ae136fabe/37.8267,-122.4233',

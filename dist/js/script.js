@@ -12641,6 +12641,7 @@ $(document).ready(function(){
 			console.log(latitud,longitud);
 		}
 	}
+geo();
 
 $.ajax({
 	url: 'https://api.darksky.net/forecast/c6bf15744245dfc8d810364ae136fabe/37.8267,-122.4233',
@@ -12656,11 +12657,11 @@ $.ajax({
 		var humedad = response.currently.humidity;
 		var uv = response.currently.uvIndex;
 		var presion = response.currently.pressure;
-		$(".grado").append(temperatura+"º");;
-		$(".viento").append(viento+" m/s");
-		$(".humedad").append(humedad+" %");
+		$(".grado").append(temperatura);;
+		$(".viento").append(viento);
+		$(".humedad").append(humedad);
 		$(".uv").append(uv);
-		$(".presion").append(presion+" hPa");
+		$(".presion").append(presion);
 		
 	})
 
